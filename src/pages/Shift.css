@@ -1,0 +1,42 @@
+.shift-page {
+  padding: 24px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.shift-empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.shift-empty p {
+  margin: 24px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.shift-active {
+  padding: 16px;
+}
+
+.shift-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shift-status {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.shift-time {
+  color: #666;
+  font-size: 14px;
+}
+
+.shift-actions {
+  display: flex;
+  gap: 12px;
+}

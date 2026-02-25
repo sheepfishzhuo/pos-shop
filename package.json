@@ -1,0 +1,41 @@
+{
+  "name": "pos-supermarket",
+  "version": "1.0.0",
+  "description": "专业超市POS收银系统",
+  "main": "dist-electron/main.js",
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node node_modules/.store/vite@5.4.21/node_modules/vite/bin/vite.js",
+    "build": "node node_modules/.store/vite@5.4.21/node_modules/vite/bin/vite.js build && electron-builder",
+    "preview": "node node_modules/.store/vite@5.4.21/node_modules/vite/bin/vite.js preview",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "electron:build": "vite build && electron-builder",
+    "server:dev": "cd server && npm run dev",
+    "server:start": "cd server && npm start"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "zustand": "^4.4.7",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
+    "recharts": "^2.10.3",
+    "antd": "^5.12.2",
+    "@ant-design/icons": "^5.2.6",
+    "react-hot-toast": "^2.4.1"
+  },
+  "devDependencies": {
+    "@esbuild/win32-x64": "^0.21.5",
+    "@rollup/rollup-win32-x64-msvc": "^4.59.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "vite": "^5.0.8",
+    "vite-plugin-electron": "^0.15.5",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "wait-on": "^7.2.0"
+  }
+}

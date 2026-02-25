@@ -1,0 +1,157 @@
+.products-page {
+  height: 100%;
+}
+
+.page-card {
+  border-radius: 16px;
+  height: 100%;
+}
+
+.page-card .ant-card-body {
+  padding: 24px;
+}
+
+.page-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.title-icon {
+  color: #6366f1;
+  font-size: 20px;
+}
+
+.search-input {
+  width: 280px;
+  border-radius: 10px;
+}
+
+.add-btn {
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.barcode {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #64748b;
+}
+
+.product-name {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.price {
+  font-weight: 600;
+  color: #6366f1;
+}
+
+.cost {
+  color: #64748b;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.action-btn.edit {
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+.action-btn.edit:hover {
+  background: #6366f1;
+  color: white;
+}
+
+.action-btn.delete {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.action-btn.delete:hover {
+  background: #ef4444;
+  color: white;
+}
+
+.action-btn.hot {
+  background: #fff7ed;
+  color: #f97316;
+}
+
+.action-btn.hot:hover {
+  background: #f97316;
+  color: white;
+}
+
+.product-modal .product-form {
+  margin-top: 8px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.product-form .ant-form-item-label > label {
+  font-weight: 500;
+  color: #475569;
+}
+
+.product-form .ant-input,
+.product-form .ant-input-number,
+.product-form .ant-select-selector {
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .page-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .toolbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

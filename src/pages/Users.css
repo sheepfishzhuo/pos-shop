@@ -1,0 +1,10 @@
+.users-page {
+  padding: 24px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.users-page .ant-card-head-title {
+  font-size: 18px;
+  font-weight: 600;
+}
